@@ -6,59 +6,46 @@ git commit -m “Add 5 items to the shopping list”
 # potoa dodadov kvantitet
 git commit -a -m "Add quantities to the items." # -a za site sto mi se vo staging area sto imaat promeni da gi commit-ne
 
-
-C:\Users\ivanr\Desktop\SI_Lab1\SI_2022_lab1_172077>git log
-commit 47adddd5a11e45a05831bccc700b6d63f33070f0 (HEAD -> master)
-Author: Ivan <ivan.rangelov3@gmail.com>
-Date:   Mon Mar 28 17:55:50 2022 +0200
-
-    Add quantities to the items.
-
-commit 8aba915480c5409487414426e5a575f75aaf2f6a
-Author: Ivan <ivan.rangelov3@gmail.com>
-Date:   Mon Mar 28 17:53:11 2022 +0200
-
-    Add 5 items to the shopping list
-
-commit b8cf7984654fe19d7cb713ae10467df9f85221e3 (origin/master, origin/HEAD)
-Author: ivanrangelov <50248520+ivanrangelov@users.noreply.github.com>
-Date:   Mon Mar 28 17:40:36 2022 +0200
-
-    update
-
-commit daf9e9f2c81c2e679866873afbc1896936bd65c6
-Author: ivanrangelov <50248520+ivanrangelov@users.noreply.github.com>
-Date:   Mon Mar 28 17:40:12 2022 +0200
-
-    Initial commit
-
 C:\Users\ivanr\Desktop\SI_Lab1\SI_2022_lab1_172077>git branch branch1
-
 C:\Users\ivanr\Desktop\SI_Lab1\SI_2022_lab1_172077>git branch branch2
 
-C:\Users\ivanr\Desktop\SI_Lab1\SI_2022_lab1_172077>git log
-commit 47adddd5a11e45a05831bccc700b6d63f33070f0 (HEAD -> master, branch2, branch1)
+C:\Users\ivanr\Desktop\SI_2022_lab1_172077\SI_2022_lab1_172077>git log
+commit 72052f1c4181d5075a2792c97274c9439bb841a8 (HEAD -> master, branch2, branch1)
 Author: Ivan <ivan.rangelov3@gmail.com>
-Date:   Mon Mar 28 17:55:50 2022 +0200
+Date:   Sun Apr 10 15:42:21 2022 +0200
 
     Add quantities to the items.
 
-commit 8aba915480c5409487414426e5a575f75aaf2f6a
+commit 1d49fe91fcb7460d755aa0d6a97f5863066821be
 Author: Ivan <ivan.rangelov3@gmail.com>
-Date:   Mon Mar 28 17:53:11 2022 +0200
+Date:   Sun Apr 10 15:41:41 2022 +0200
 
     Add 5 items to the shopping list
 
-commit b8cf7984654fe19d7cb713ae10467df9f85221e3 (origin/master, origin/HEAD)
+commit cbf66b83f4e4998ada9908b022b408765643f739 (origin/master, origin/HEAD)
 Author: ivanrangelov <50248520+ivanrangelov@users.noreply.github.com>
-Date:   Mon Mar 28 17:40:36 2022 +0200
+Date:   Sun Apr 10 15:39:13 2022 +0200
 
+    upd8
+
+commit b681dff02fa853b0854b5ab5dcf4fb7d4cb6ab5d
+Author: ivanrangelov <50248520+ivanrangelov@users.noreply.github.com>
+Date:   Sun Apr 10 15:39:01 2022 +0200
+
+    Initial commit
 
 git push origin --all   # za da gi sinhroniziram site granki
 
 git checkout branch1
 
 git commit -a -m "Change quantity of item #5"
+
+git checkout master
+git commit -a -m "Change quantity of item #2"
+
+C:\Users\ivanr\Desktop\SI_2022_lab1_172077\SI_2022_lab1_172077>git commit -a -m "Change quantity of item #2"
+[master 0b1126e] Change quantity of item #2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
 
 git push origin --all
 
@@ -67,29 +54,39 @@ git checkout branch2
 git commit -a -m “Modify item #4”
 
 git log 
-
-commit 0e531611703234b630e99eda8da78b70d28a0923 (HEAD -> branch2)
+C:\Users\ivanr\Desktop\SI_2022_lab1_172077\SI_2022_lab1_172077>git log
+commit e2feaf6ca599b2a9eee84bf626204c6f3ab2d0a9 (HEAD -> branch2)
 Author: Ivan <ivan.rangelov3@gmail.com>
-Date:   Mon Mar 28 18:11:27 2022 +0200
+Date:   Sun Apr 10 15:47:56 2022 +0200
 
     Modify item #4
 
-commit 47adddd5a11e45a05831bccc700b6d63f33070f0 (origin/branch2)
+commit 72052f1c4181d5075a2792c97274c9439bb841a8 (origin/branch2)
 Author: Ivan <ivan.rangelov3@gmail.com>
-Date:   Mon Mar 28 17:55:50 2022 +0200
+Date:   Sun Apr 10 15:42:21 2022 +0200
 
     Add quantities to the items.
 
-commit 8aba915480c5409487414426e5a575f75aaf2f6a
+commit 1d49fe91fcb7460d755aa0d6a97f5863066821be
 Author: Ivan <ivan.rangelov3@gmail.com>
-Date:   Mon Mar 28 17:53:11 2022 +0200
+Date:   Sun Apr 10 15:41:41 2022 +0200
 
     Add 5 items to the shopping list
 
-commit b8cf7984654fe19d7cb713ae10467df9f85221e3
+commit cbf66b83f4e4998ada9908b022b408765643f739
 Author: ivanrangelov <50248520+ivanrangelov@users.noreply.github.com>
+Date:   Sun Apr 10 15:39:13 2022 +0200
 
-wq
+    upd8
+
+commit b681dff02fa853b0854b5ab5dcf4fb7d4cb6ab5d
+Author: ivanrangelov <50248520+ivanrangelov@users.noreply.github.com>
+Date:   Sun Apr 10 15:39:01 2022 +0200
+
+    Initial commit
+:
+
+wq # ( za exit ) 
 
 git commit -a --amend -m “Modify item #4 and add item #6”.
 
