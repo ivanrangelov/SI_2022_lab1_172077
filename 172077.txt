@@ -6,32 +6,6 @@ git commit -m “Add 5 items to the shopping list”
 # potoa dodadov kvantitet
 git commit -a -m "Add quantities to the items." # -a za site sto mi se vo staging area sto imaat promeni da gi commit-ne
 
-
-C:\Users\ivanr\Desktop\SI_Lab1\SI_2022_lab1_172077>git log
-commit 47adddd5a11e45a05831bccc700b6d63f33070f0 (HEAD -> master)
-Author: Ivan <ivan.rangelov3@gmail.com>
-Date:   Mon Mar 28 17:55:50 2022 +0200
-
-    Add quantities to the items.
-
-commit 8aba915480c5409487414426e5a575f75aaf2f6a
-Author: Ivan <ivan.rangelov3@gmail.com>
-Date:   Mon Mar 28 17:53:11 2022 +0200
-
-    Add 5 items to the shopping list
-
-commit b8cf7984654fe19d7cb713ae10467df9f85221e3 (origin/master, origin/HEAD)
-Author: ivanrangelov <50248520+ivanrangelov@users.noreply.github.com>
-Date:   Mon Mar 28 17:40:36 2022 +0200
-
-    update
-
-commit daf9e9f2c81c2e679866873afbc1896936bd65c6
-Author: ivanrangelov <50248520+ivanrangelov@users.noreply.github.com>
-Date:   Mon Mar 28 17:40:12 2022 +0200
-
-    Initial commit
-
 C:\Users\ivanr\Desktop\SI_Lab1\SI_2022_lab1_172077>git branch branch1
 
 C:\Users\ivanr\Desktop\SI_Lab1\SI_2022_lab1_172077>git branch branch2
