@@ -128,14 +128,21 @@ git checkout master
 git merge branch1
 
 git merge branch2
-
-git merge
+git add commit -a -m "Merge branch 'branch2'"
 
 # Ke ima merge conflict pomegju branch2 i master
 # Konfliktot se resava so brisenje na sostojbata sto e vo head ( master) i zacuvuvanje na promenite od branch2
+# Se koristi rekurzivna strategija za merge ( ne e Fast forward )
+
+git add 172077.txt
+
+git commit -a -m "“Add docs”
 
 git push origin master
 
+git push origin branch1
+
+git push origin branch2
 
 
 
