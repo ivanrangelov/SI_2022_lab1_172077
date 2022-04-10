@@ -1,0 +1,110 @@
+Napraviv Personal access token, go rename-nav main vo master.
+Napraviv github repo, napraviv folder i git clone 
+
+git add . # za da selektiram shopping list
+git commit -m “Add 5 items to the shopping list” 
+# potoa dodadov kvantitet
+git commit -a -m "Add quantities to the items." # -a za site sto mi se vo staging area sto imaat promeni da gi commit-ne
+
+
+C:\Users\ivanr\Desktop\SI_Lab1\SI_2022_lab1_172077>git log
+commit 47adddd5a11e45a05831bccc700b6d63f33070f0 (HEAD -> master)
+Author: Ivan <ivan.rangelov3@gmail.com>
+Date:   Mon Mar 28 17:55:50 2022 +0200
+
+    Add quantities to the items.
+
+commit 8aba915480c5409487414426e5a575f75aaf2f6a
+Author: Ivan <ivan.rangelov3@gmail.com>
+Date:   Mon Mar 28 17:53:11 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit b8cf7984654fe19d7cb713ae10467df9f85221e3 (origin/master, origin/HEAD)
+Author: ivanrangelov <50248520+ivanrangelov@users.noreply.github.com>
+Date:   Mon Mar 28 17:40:36 2022 +0200
+
+    update
+
+commit daf9e9f2c81c2e679866873afbc1896936bd65c6
+Author: ivanrangelov <50248520+ivanrangelov@users.noreply.github.com>
+Date:   Mon Mar 28 17:40:12 2022 +0200
+
+    Initial commit
+
+C:\Users\ivanr\Desktop\SI_Lab1\SI_2022_lab1_172077>git branch branch1
+
+C:\Users\ivanr\Desktop\SI_Lab1\SI_2022_lab1_172077>git branch branch2
+
+C:\Users\ivanr\Desktop\SI_Lab1\SI_2022_lab1_172077>git log
+commit 47adddd5a11e45a05831bccc700b6d63f33070f0 (HEAD -> master, branch2, branch1)
+Author: Ivan <ivan.rangelov3@gmail.com>
+Date:   Mon Mar 28 17:55:50 2022 +0200
+
+    Add quantities to the items.
+
+commit 8aba915480c5409487414426e5a575f75aaf2f6a
+Author: Ivan <ivan.rangelov3@gmail.com>
+Date:   Mon Mar 28 17:53:11 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit b8cf7984654fe19d7cb713ae10467df9f85221e3 (origin/master, origin/HEAD)
+Author: ivanrangelov <50248520+ivanrangelov@users.noreply.github.com>
+Date:   Mon Mar 28 17:40:36 2022 +0200
+
+
+git push origin --all   # za da gi sinhroniziram site granki
+
+git checkout branch1
+
+git commit -a -m "Change quantity of item #5"
+
+git push origin --all
+
+git checkout branch2
+
+git commit -a -m “Modify item #4”
+
+git log 
+
+commit 0e531611703234b630e99eda8da78b70d28a0923 (HEAD -> branch2)
+Author: Ivan <ivan.rangelov3@gmail.com>
+Date:   Mon Mar 28 18:11:27 2022 +0200
+
+    Modify item #4
+
+commit 47adddd5a11e45a05831bccc700b6d63f33070f0 (origin/branch2)
+Author: Ivan <ivan.rangelov3@gmail.com>
+Date:   Mon Mar 28 17:55:50 2022 +0200
+
+    Add quantities to the items.
+
+commit 8aba915480c5409487414426e5a575f75aaf2f6a
+Author: Ivan <ivan.rangelov3@gmail.com>
+Date:   Mon Mar 28 17:53:11 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit b8cf7984654fe19d7cb713ae10467df9f85221e3
+Author: ivanrangelov <50248520+ivanrangelov@users.noreply.github.com>
+
+wq
+
+git commit -a --amend -m “Modify item #4 and add item #6”.
+
+git checkout master
+
+git merge branch1
+
+git merge branch2
+
+# Ke ima merge conflict pomegju branch2 i master
+# Konfliktot se resava so brisenje na sostojbata sto e vo head ( master) i zacuvuvanje na promenite od branch2
+
+git push origin master
+
+
+
+
+
